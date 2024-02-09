@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testing Javascript</title>
+
+    <style>
+        button{
+            background-color: rgb(6, 153, 6);
+            color: white;
+            padding: 14px 28px;
+            margin: 8px 0;
+            cursor: pointer;
+            width: 12%;
+            border-radius: 5px;
+            border:none;
+            /* margin: auto; */
+            float: center;
+        }
+    </style>
+</head>
+<body>
+    <button>Click Me</button>
+
+    <script>
+        // get access to the button
+        const button = document.querySelector('button');
+
+        // add event listener to the button
+        button.addEventListener("click", showMyName);
+
+        // function to show my name
+        function showMyName(){
+            const pro = prompt('enter your name')
+                alert(`My name is ${pro}`) 
+        }
+    </script>
+    
+</body>
+</html>
